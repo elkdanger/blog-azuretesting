@@ -1,0 +1,28 @@
+{
+  "name": "blog-azuretesting",
+  "version": "1.0.0",
+  "description": "Example application from the blog post on Steve's Coding Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/elkdanger/blog-azuretesting.git"
+  },
+  "author": "Steve Hobbs <elkdanger@gmail.com> (http://stevescodingblog.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elkdanger/blog-azuretesting/issues"
+  },
+  "homepage": "https://github.com/elkdanger/blog-azuretesting#readme",
+  "dependencies": {
+    "azure-storage": "^0.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "proxyquire": "^1.6.0",
+    "sinon": "^1.15.4"
+  }
+}
