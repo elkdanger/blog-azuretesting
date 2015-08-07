@@ -2,8 +2,8 @@
 
 This is the code repository for the blog post available at http://stevescodingblog.co.uk/testing-against-azure-table-storage-with-node-js-mocha-and-sinon
 
-## Setup
-Add your Azure Table Storage configuration a configuration file inside the `/config/default.json` file:
+## Setup (optional)
+If you would like to actually run the app against a real Azure account, add your Azure Table Storage configuration a configuration file inside the `/config/default.json` file:
 
 ```json
 {
@@ -13,6 +13,8 @@ Add your Azure Table Storage configuration a configuration file inside the `/con
 	}
 }
 ```
+
+This step is not necessary if you just want to run the tests.
 
 ## Testing
 To run the tests: `$ npm test`
