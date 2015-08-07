@@ -12,6 +12,14 @@ chai.use(sinonChai);
 
 describe('The index script', function() {
 	
+	// Stub out the configuration
+	var config = {
+		get: sinon.stub().returns({
+			accountName: '',
+			accountKey: ''
+		})
+	};
+	
 	// Stub out the table service - set all the methods up to return nothing for now
 	var tableServiceStub = {
 		createTableIfNotExists: sinon.stub().callsArgWith(1, null, null),
@@ -30,7 +38,8 @@ describe('The index script', function() {
 	
 	// Execute the test subject by using proxyquire to load our script, passing in dependencies
 	proxyquire('../index.js', {
-		'azure-storage': azureStub
+		'azure-storage': azureStub,
+		'config': config
 	});
 	
 	// First test - make sure the table is created
