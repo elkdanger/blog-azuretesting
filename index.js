@@ -34,7 +34,7 @@ tableService.createTableIfNotExists('TestData', function(err, result) {
 					throw err;
 					
 				console.log('Retrieved ' + id + ' again');
-				console.log(result);				
+				console.log(result);
 			});			
 		});		
 	}	
