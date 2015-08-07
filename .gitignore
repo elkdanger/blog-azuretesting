@@ -1,1 +1,4 @@
 node_modules/
+
+# The configuration file, which should be set up by you
+config/default.json
