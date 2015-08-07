@@ -44,6 +44,8 @@ describe('The index script', function() {
 	describe('the insert entity operation', function() {
 		
 		var insertedEntity = tableServiceStub.insertEntity.args[0][1];
+		
+		// Store the id of the entity that was created, so that we can test that we retrieved it again later
 		generatedId = insertedEntity.RowKey._;
 		
 		it('is called', function() {
